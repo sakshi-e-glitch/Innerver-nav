@@ -6,9 +6,6 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-DE5D83
-FFF5EE
-
 *::-moz-selection {
   background: rgba(233, 229, 15, 0.973);
   color: rgba(66, 7, 226, 0.568);
@@ -48,7 +45,7 @@ header .nav {
   height: 80px;
   
 
-
+  /* added lines 49-53  to add flex prop*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,12 +53,14 @@ header .nav {
 }
 header .nav .title {
   line-height: 80px;
+  /* removed padding */
   /* padding: 0 120px; */
   font-size: 24px;
   color: #fff;
   font-weight: 900;
 }
 header .nav .toggle {
+  /* removed commented properties 64,65,68,69,70 */
   /* position: absolute; */
   /* margin: auto; */
   width: 46px;
@@ -124,6 +123,7 @@ header .nav nav {
   transition: opacity 0.5s ease;
 }
 header .nav nav .showcase {
+  /* made background of showcase a bit transparent */
   /* background: rgb(255, 193, 193); */
   background-color: rgba(0, 0, 0, 0.486);            
   flex: 1;
@@ -158,6 +158,7 @@ header .nav nav .showcase .showcase-menu li {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* added relative unit for fonts */
   /* font-size: 40px; */
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -183,7 +184,7 @@ header .nav nav .menu {
   /* background: rgb(248, 78, 158); */
   background: #DE5D83;
   flex: 1;
-
+  /* added flex properties */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,6 +194,7 @@ header .nav nav .menu ul {
   width: 100%;
   padding: 80px 48px 24px 48px;
   list-style-type: none;
+  /* removed max height */
   /* max-height: 100%; */
   height: 100vh;
   overflow-y: auto;
@@ -238,16 +240,17 @@ header .nav nav .menu ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
 }
 header .nav nav .menu ul li .number {
   display: inline-block;
+  /* removed padding */
   /* padding: 0 0 0 80px; */
   padding: 0 5vw;
   overflow: hidden;
 }
 header .nav nav .menu ul li .number span {
   display: block;
+  /* gave relative unit to font-size */
   /* font-size: 48px; */
   font-size: 2rem;
   font-weight: 400;
@@ -256,15 +259,17 @@ header .nav nav .menu ul li .number span {
 }
 header .nav nav .menu ul li a {
   display: inline-block;
+
+  /* relative unit to font-size and removed padding */
   /* font-size: 48px; */
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.822);
   line-height: 1;
   /* padding: 24px 0 24px 80px; */
-  /* padding: 1vw 5vw; */
   transition: transform 0.25s ease;
 }
 
+/* added new query selector */
 header .nav nav .menu ul{
     display: flex;
     justify-content: space-around;
